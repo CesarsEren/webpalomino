@@ -1,0 +1,187 @@
+/********************
+ * FEATURE CAROUSEL *
+ ********************/
+
+.carousel-container {
+    position: relative;
+    width: 960px;
+}
+
+#carousel1 {
+    height: 580px;
+    width: 100%;
+    /*background-color: #CCC;*/
+    position: relative;
+    margin-bottom: 0.5em;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.carousel-image {
+    border: 0;
+    display: block;
+}
+
+.carousel-feature {
+    position: absolute;
+    /*top: -1000px;
+    left: -1000px;
+    /*border: 2px solid #5d5d5d;*/
+    cursor: pointer;
+}
+
+.carousel-feature .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*background-color: #000;*/
+}
+
+.carousel-feature .carousel-caption p {
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}
+
+.tracker-summation-container {
+    position: absolute;
+    color: white;
+    right: 48px;
+    top: 230px;
+    padding: 3px;
+    margin: 3px;
+    background-color: #000;
+}
+
+.tracker-individual-container {
+    position: absolute;
+    color: white;
+    right: 48px;
+    top: 210px;
+    padding: 0;
+    margin: 0;
+}
+
+.tracker-individual-container li {
+    list-style: none;
+}
+
+.tracker-individual-container .tracker-individual-blip {
+    margin: 0 3px;
+    padding: 0 3px;
+    color: white;
+    text-align: center;
+    /*background-color: #DDD;*/
+}
+
+.tracker-individual-container .tracker-individual-blip-selected {
+    color: white;
+    font-weight: bold;
+    background-color: #000;
+}
+
+#carousel-left {
+    position: absolute;
+    bottom: 33px;
+    left: 220px;
+    cursor: pointer;
+}
+
+#carousel-right {
+    position: absolute;
+    bottom: 33px;
+    right: 220px;
+    cursor: pointer;
+}
+
+.animated {
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.delay-2s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes carousel-item-middle {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes carousel-item-middle {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.carousel-item-middle {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+#carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.carousel-item-uno {
+    order: 1;
+    cursor: pointer;
+}
+
+.carousel-item-uno .contenido {
+    display: none;
+}
+
+.carousel-item-middle {
+    cursor: pointer;
+    order: 2;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.carousel-item-middle .contenido {
+    display: block;
+}
+
+.carousel-item-middle .img-responsive {
+    display: block;
+    max-width: 125%;
+    height: auto
+}
+
+
+/*.carousel-item-middle .img-responsive {
+    width: 100%;
+}*/
+
+.carousel-item-tres {
+    cursor: pointer;
+    order: 3;
+}
+
+.carousel-item-tres .contenido {
+    display: none;
+}
