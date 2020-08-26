@@ -3983,7 +3983,7 @@ footer.dark-bg .input-group {
     color: #72849e
 }
 
-.tr-list-detail h4,
+.tr-list-detail h1,
 .tr-list-detail>*,
 footer.dark-bg .btn.btn-default,
 footer.dark-bg .btn.btn-default:focus,
@@ -4056,7 +4056,7 @@ footer.dark-bg input.form-control:hover {
     left: 0;
     right: 0;
     background: #222e4c;
-    opacity: .6
+    opacity: .4
 }
 
 .page-title-banner>*,
